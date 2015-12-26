@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Department of Computer Science and Engineering, HKUST">
+<!--meta name="description" content="401 Authorization Required"-->
+<!--meta name="keywords" content="CS, Computer Science, Engineering, 401 Authorization Required"-->
+<title>401 Authorization Required</title>
+<!--link rel="stylesheet" href="/styles/afix.css"-->
+<link rel="stylesheet" media="print" href="/styles/print.css">
+<link rel="stylesheet" media="all" href="/styles/uni-form.css">
+<link rel="stylesheet" media="screen" href="/styles/style.css?=t1437619869">
+<link rel="stylesheet" media="screen,print" href="/styles/common.css">
+
+<script src="/scripts/script.js"></script>
+<script src="/scripts/onload.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script>window.jQuery || document.write('<script src="/scripts/jquery/jquery-1.11.1.min.js"><\/script>')</script>
+
+<script>
+ $(function() {
+  var navItems = $("#topNav > li > a");
+  navItems.bind("mouseover", function() {
+   navItems.parent().removeClass("active");
+   $(this).parent().addClass("active");
+  });
+ });
+</script>
+</head>
+<body>
+<div id="header">
+<a href="/"><img src="/images/deptLogo.png" alt="CSE Logo"></a>
+<span class="mlang"><a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn">中文简体</a></span>
+
+<a href="http://www.ust.hk/"><img id="uniLogo" src="/images/uniLogo.png" alt="HKUST Logo"></a>
+<a href="http://www.seng.ust.hk/"><img id="schoolLogo" src="/images/sengLogo.png" alt="SENG Logo"></a>
+ <div id="search">
+<!-- Place this tag where you want both of the search box and the search results to render -->
+<!--
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/" enableHistory="true"></gcse:searchbox-only>
+-->
+<gcse:searchbox-only id="gcse-searchBox" resultsUrl="/admin/search/"></gcse:searchbox-only>
+ </div><!-- End search-->
+</div><!-- End header -->
+
+
+<div id="navBar">
+<ul id="topNav">
+<li id="About"><a accesskey="A" title="About Us" href="/admin/sitemap/?map=About">About</a>
+<ul>
+<li><a title="Welcome Message" href="/admin/welcome/">Welcome</a></li>
+<li><a href="/admin/about/">About Us</a></li>
+<li><a href="/admin/factsheet/">Fact Sheet</a></li>
+<li><a href="/News/?type=news|achievement">News &amp; Achievements</a></li>
+<li><a href="/News/?type=event">Events</a></li>
+<li><a href="/admin/QA/">Quality Assurance</a></li>
+<li><a title="Safety Management" href="http://cssystem.cse.ust.hk/UGuides/csd_manage.html">Safety</a></li>
+<li><a href="/admin/contact/">Contact Us</a></li>
+<!--a href="http://www.ust.hk/eng/about/campus_gethere.htm">Directions to HKUST</a-->
+</ul>
+</li>
+<li id="People"><a accesskey="P" title="People" href="/admin/sitemap/?map=People">People</a>
+<ul>
+<li><a href="/admin/people/faculty/">Faculty</a></li>
+<li><a href="/admin/people/staff/">Staff</a></li>
+<li><a title="Communication Tutors" href="/ct/">Communication Tutors</a></li>
+<li><a href="/admin/people/pg/">Postgraduate Students</a></li>
+<li><a href="/alumni/">Alumni</a></li>
+<li><a href="/admin/recruitment/">Recruitment</a></li>
+<li><a href="/admin/people/eic/">Editor-in-Chief Appointment</a></li>
+</ul>
+</li>
+<li id="Undergraduate"><a accesskey="U" title="Undergraduate Programs" href="/admin/sitemap/?map=Undergraduate">Undergraduate</a>
+<ul>
+<!--a href="/ug/admissions/comp/4yr/">Program Information (4-Year)</a-->
+<!--a href="/ug/admissions/comp/4yr/">Program Information</a-->
+<!--a href="/ug/admissions/comp/">3-Year UG Programs</a-->
+<li><a href="/ug/">UG Programs</a></li>
+<!--a href="/ug/hkust_only/4yr/" rel="nofollow">UG Intranet</a-->
+<!--a href="/ug/hkust_only/4yr/" rel="nofollow">4-Year UG Intranet</a-->
+<!--a href="/ug/hkust_only/" rel="nofollow">3-Year UG Intranet</a-->
+<li><a href="/ug/hkust_only/4yr/" rel="nofollow">UG Intranet (4-Yr)</a></li>
+<li><a href="/ug/hkust_only/" rel="nofollow">UG Intranet (3-Yr)</a></li>
+<!--a href="/ug/admissions/">UG Admissions</a-->
+</ul>
+</li>
+<li id="Postgraduate"><a accesskey="P" title="Postgraduate Programs" href="/admin/sitemap/?map=Postgraduate">Postgraduate</a>
+<ul>
+<li><a href="/pg/">PG Programs</a></li>
+<li><a href="/pg/hkust_only/" rel="nofollow">PG Intranet</a></li>
+<li><a href="/pg/admissions/recruiting/">CSE PG Recruiting</a></li>
+<!--a href="/pg/admissions/recruiting/">Admissions</a-->
+<!--a href="/pg/admissions/registration/">PG Early Recruiting Application</a-->
+<li><a href="http://pg.ust.hk/admissions">PG Admissions</a></li>
+<li><a href="/pg/ourgraduates/">Student Destinations</a></li>
+</ul>
+</li>
+<li><a accesskey="R" title="Research Groups &amp; Areas" href="/pg/research/">Research</a></li>
+<li id="Career"><a accesskey="C" title="Career Corner" href="/admin/sitemap/?map=Career">Career</a>
+<ul>
+<!--a href="/ug/career/opportunities/">Career Opportunities for CS Majors</a-->
+<li><a href="/ug/internship/">Internship Opportunities</a></li>
+<!--a href="/ug/internship/announcement/" rel="nofollow">Job Opportunities</a-->
+<li><a href="/ug/internship/forEmployer/">Info for Employers</a></li>
+<!--a href="/ug/internship/links/">Useful Links on Career Service</a-->
+<li><a href="/ug/career/service/">Useful Links on Career Service</a></li>
+<li><a href="/admin/recruitment/">Recruitment</a></li>
+</ul>
+</li>
+<!--li id="Facilities"><a accesskey="F" title="Computing Facilities" href="/admin/facilities/">Facilities</a-->
+<li id="Facilities"><a accesskey="F" title="Computing Facilities" href="/admin/sitemap/?map=Facilities">Facilities</a>
+<ul>
+<li><a href="/admin/facilities/committee/" rel="nofollow">Facility Committee &amp; Policies</a></li>
+<li><a href="/admin/lab/">Lab Schedules</a></li>
+<li><a href="http://cssystem.cse.ust.hk/UGuides/index.html">User Guides</a></li>
+<li><a href="http://cssystem.cse.ust.hk/">CS System</a></li>
+</ul>
+</li>
+<li id="Links"><a accesskey="L" title="Links" href="/admin/sitemap/?map=Links">Links</a>
+<ul>
+<li><a title="CSE Webmail" href="https://imail.cse.ust.hk/sqmail/">WebMail</a></li>
+<li><a href="/Restricted/" rel="nofollow">Faculty Intranet</a></li>
+<li><a title="UST MyPortal" href="http://my.ust.hk">MyPortal</a></li>
+<li><a title="HKUST Programming Team" href="/acm/">Programming Team</a></li>
+<li><a title="CSE Students' Society" href="http://ihome.ust.hk/~su_csess/">Students' Society</a></li>
+<!--a title="CS Alumni Association" href="http://alumni.cse.ust.hk/">Alumni Association</a-->
+<li><a title="CS Alumni Association" href="https://www.facebook.com/cseaa.hkust">Alumni Association</a></li>
+<li><a href="/admin/sitemap/">Site Map</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- End navbar -->
+<div id="maincontent">
+<!--
+<span class="mlang"><a xml:lang="zh-hk" lang="zh-hk" href="?lang=hk">中文繁體</a> |
+<a xml:lang="zh-cn" lang="zh-cn" href="?lang=cn">中文简体</a></span>
+-->
+<h1>Sorry, Authorization Required</h1>
+
+<p>This server could not verify that you are authorized to
+access the document requested. Either you supplied the wrong credentials
+(e.g., bad password), or your browser doesn't understand how to supply
+the credentials required.<p>
+</div><!-- End maincontent -->
+
+
+<div id="footer">
+<p class="right" style="margin-top:0em">Last updated on 2012-07-16<br>
+Email: <span><script>mmsend('csdept')</script></span>
+</p>
+<p>
+<!--
+Department of Computer Science and Engineering, HKUST. All rights reserved.</p>
+-->
+Department of Computer Science and Engineering<br>
+The Hong Kong University of Science and Technology<br>
+Clear Water Bay, Kowloon, Hong Kong</p>
+</div>
+
+<script>
+  (function() {                  
+    var cx = '000421234834546955152:ml8c4wlfyd8';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<!-- Google Analytics Starts -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){          
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-2771148-1', 'www.cse.ust.hk');
+  ga('send', 'pageview');
+</script>
+<!-- Google Analytics Ends -->
+</body>
+</html>
+<!--div class="right">Time elapsed: 0.027347087860107</div-->

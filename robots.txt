@@ -1,0 +1,14 @@
+User-agent: cssystem
+Disallow: /trash/
+Disallow: /devel/
+Disallow: /cgi-bin/
+Disallow: /project/
+
+User-agent: *
+Disallow: /trash/
+Disallow: /devel/
+Disallow: /cgi-bin/
+Disallow: /project/
+Disallow: /comp303/
+Disallow: /comp300f/
+Disallow: /comp343/

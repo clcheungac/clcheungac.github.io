@@ -1,0 +1,31 @@
+HTTrack3.48-21+htsswf+htsjava launched on Sun, 20 Dec 2015 14:36:43 at http://course.cse.ust.hk/comp2012 +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.pdf
+(winhttrack -qYC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" -Y http://course.cse.ust.hk/comp2012 -O1 "C:\My Websites\2012" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.pdf )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:36:44	Warning: 	Note: due to course.cse.ust.hk remote robots.txt rules, links beginning with these path will be forbidden: /trash/, /devel/, /cgi-bin/, /project/, /comp303/, /comp300f/, /comp343/ (see in the options to disable this)
+14:40:04	Error: 	"Forbidden" (403) at link https://course.cse.ust.hk/comp2012/favicon.ico (from course.cse.ust.hk/comp2012/)
+15:14:08	Warning: 	Note: due to cssystem.cs.ust.hk remote robots.txt rules, links beginning with these path will be forbidden: /, /cgi-bin/ (see in the options to disable this)
+15:14:34	Warning: 	File course.cse.ust.hk/comp2012/labs/5-ovrld/index.html converted from UCS2 to UTF-8 (old size: 173502 bytes, new size: 86922 bytes)
+15:15:17	Warning: 	Note: due to https://course.cse.ust.hk remote robots.txt rules, links beginning with these path will be forbidden: /trash/, /devel/, /cgi-bin/, /project/, /comp303/, /comp300f/, /comp343/ (see in the options to disable this)
+15:15:17	Error: 	"Authorization Required" (401) at link https://course.cse.ust.hk/cass (from course.cse.ust.hk/comp2012/assignments/PA1/pa1.html)
+15:15:17	Error: 	"Forbidden" (403) at link https://course.cse.ust.hk/comp2012/labs/1-eclipse/index_new_files/editdata.mso (from course.cse.ust.hk/comp2012/labs/1-eclipse/index.html)
+15:15:17	Error: 	"Forbidden" (403) at link https://course.cse.ust.hk/comp2012/labs/1-eclipse/index_new_files/themedata.thmx (from course.cse.ust.hk/comp2012/labs/1-eclipse/index.html)
+15:15:17	Error: 	"Forbidden" (403) at link https://course.cse.ust.hk/comp2012/labs/1-eclipse/index_new_files/colorschememapping.xml (from course.cse.ust.hk/comp2012/labs/1-eclipse/index.html)
+15:15:17	Error: 	"Forbidden" (403) at link https://course.cse.ust.hk/comp2012/labs/1-eclipse/index_new_files/header.html (from course.cse.ust.hk/comp2012/labs/1-eclipse/index.html)
+15:15:18	Warning: 	Note: due to https://www.cse.ust.hk remote robots.txt rules, links beginning with these path will be forbidden: /trash/, /devel/, /cgi-bin/, /project/, /templates/ (see in the options to disable this)
+15:15:18	Error: 	"Authorization Required" (401) at link https://www.cse.ust.hk/cssystem/Software/Password_Only/SSHSecureShellClient-3.2.9.exe (from cssystem.cs.ust.hk/home.php?docbase=UGuides/RemoteAccess&req_url=UGuides/RemoteAccess/ssh.html)
+15:15:18	Error: 	"Not Found" (404) at link course.cse.ust.hk/comp2012/labs/4-construct/index_files/editdata.mso (from course.cse.ust.hk/comp2012/labs/4-construct/index.html)
+15:15:18	Error: 	"Not Found" (404) at link course.cse.ust.hk/comp2012/labs/5-ovrld/index_files/editdata.mso (from course.cse.ust.hk/comp2012/labs/5-ovrld/index.html)
+15:15:18	Error: 	"Not Found" (404) at link course.cse.ust.hk/comp2012/labs/style.css (from course.cse.ust.hk/comp2012/labs/5-ovrld/index.html)
+15:15:18	Error: 	"Not Found" (404) at link course.cse.ust.hk/comp2012/labs/6-stack/index_files/editdata.mso (from course.cse.ust.hk/comp2012/labs/6-stack/index.html)
+15:15:18	Warning: 	Retry after error -5 (Unable to open local file) at link file:///C:/Program Files (x86)/Microsoft Office 2003/OFFICE11/fpclass/outline.js (from course.cse.ust.hk/comp2012/labs/9-inh/index.html)
+15:15:29	Warning: 	Retry after error -5 (Unable to open local file) at link file:///C:/Program Files (x86)/Microsoft Office 2003/OFFICE11/fpclass/outline.js (from course.cse.ust.hk/comp2012/labs/9-inh/index.html)
+15:15:29	Error: 	"Not Found" (404) at link course.cse.ust.hk/comp2012/labs/10-vf/func2.zip (from course.cse.ust.hk/comp2012/labs/10-vf/index-ans.html)
+15:16:05	Error: 	"Unable to open local file" (-5) after 2 retries at link file:///C:/Program Files (x86)/Microsoft Office 2003/OFFICE11/fpclass/outline.js (from course.cse.ust.hk/comp2012/labs/9-inh/index.html)
+
+HTTrack Website Copier/3.48-21 mirror complete in 39 minutes 25 seconds : 242 links scanned, 221 files written (58636285 bytes overall) [58638632 bytes received at 24794 bytes/sec], 99101 bytes transferred using HTTP compression in 2 files, ratio 19%, 3.8 requests per connection
+(13 errors, 7 warnings, 0 messages)

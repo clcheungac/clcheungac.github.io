@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from cssystem.cs.ust.hk/home.php?docbase=UGuides/RemoteAccess&req_url=UGuides/RemoteAccess/ssh.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Dec 2015 07:14:08 GMT -->
+<head>
+	<meta charset="utf-8" />
+	<title>CS System</title>
+	<script src="http://cssystem.cs.ust.hk/Scripts/jquery-1.8.1.min.js"></script>
+	<script src="http://cssystem.cs.ust.hk/Scripts/jquery-ui-1.8.23.custom.min.js"></script>
+	<script>
+		var is_csd = 0;
+		var is_hkust = 1;
+	</script>
+	<script src="http://cssystem.cs.ust.hk/Scripts/main.js"></script>
+	<link rel="stylesheet" href="http://cssystem.cs.ust.hk/Styles/main.css" />
+	<link rel="stylesheet" href="http://cssystem.cs.ust.hk/Styles/common.css" />
+	<link rel="stylesheet" href="http://cssystem.cs.ust.hk/Styles/jquery-ui-1.8.23.custom.css" />
+</head>
+<body>
+<div id="bodyContainer">
+	<header>
+		<div class="logo">
+			<img id="homeLogo" src="http://cssystem.cs.ust.hk/images/cssystem.png" alt="CS SYSTEM HOMEPAGE" />
+		</div>
+		<div class="linksContainer">
+			<nav>
+				<a href="http://cssystem.cs.ust.hk/UGuides/index.html">User Guides</a>
+				<a href="http://cssystem.cs.ust.hk/Facilities/index.html">Computing Facilities</a>
+				<a href="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/index.html">Remote Access</a>
+			</nav>
+			<nav>
+				<a href="http://cssystem.cs.ust.hk/FAQ/index.html">FAQ</a>
+				<a href="http://cssystem.cs.ust.hk/Forms/index.html">Useful Forms</a>
+				<a href="http://cssystem.cs.ust.hk/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="searchBar">
+			<form action="#">
+				<div>
+					<span id="keywordClose">x</span>
+					<input id="keyword" size="20" type="text" autocomplete="off" placeholder="Search" />
+					<select id="searchCat">
+						<option>All</option>
+						<option>Faculty/Staff</option>
+						<option>Postgraduate</option>
+						<option>Undergraduate</option>
+						<option>Guest</option>
+					</select>
+				</div>
+				<div id="matches" class="floating">
+				</div>
+			</form>
+		</div>
+	</header>
+	<article class="main-content">
+<!--[dme507.resnet.ust.hk][143.89.94.7][1][0]-->
+﻿<h2>Quick start on SSH/SCP/SFTP</h2>
+<ul>
+    <li><a href="#UNIX">On Unix</a></li>
+    <li><a href="#WIN32">On Windows</a></li>
+    <li><a href="#WEB">On Web Browser</a></li>
+</ul>
+<hr>
+<h2 id="UNIX">On UNIX:</h2>
+<p><span class="bold">Outgoing access:</span> similar to telnet, just do a <span class="bold">"ssh2 &lt;hostname&gt;</span>"</p>
+<p><span class="bold">Copy files around:</span></p>
+<dl>
+    <dt>e.g. You are at hostA and wish to copy file <span class="bold">abc.txt</span> from directory /homes/test/papers at hostA to directory /project/mytest/papers at hostB:</dt>
+    <dd>At hostA:<span class="bold">"scp2 /homes/test/papers/abc.txt hostB:/project/mytest/papers"</span></dd>
+    <dt>Now, if you are at hostB and want to do the same operation:</dt>
+    <dd>At hostB:<span class="bold">"scp2 hostA:/homes/test/papers/abc.txt /project/mytest/papers"</span></dd>
+</dl>
+
+<h3>SFTP:</h3>
+
+<p>
+    Similar to regular command-line FTP, do a <span class="bold">"sftp2 &lt;hostname&gt;"</span><br>
+    You will then get a command prompt similar to FTP as:
+</p>
+<p class="mono">
+    sftp&gt;
+</p>
+<p>
+    Basic commands like <span class="bold">"ls, cd, get, mget, put, mput"</span> are the same. To
+transfer binary file, you may type in:
+</p>
+<p class="mono">
+    sftp&gt;<span class="bold">binary</span>
+</p>
+<br />
+
+<h2 id="WIN32">On Windows:</h2>
+<p>
+    If you prefer the command-line mode, you may start a "Command Prompt" by
+"Start" -> "Programs" -> "Accessories" -> "Command Prompt"
+</p>
+<p>At the prompt, you can use all the commands described above for UNIX.</p>
+<p>
+    If you prefer the GUI mode, you may start the "SSH Secure Shell Client". A 
+copy can be downloaded <a href="../www.cse.ust.hk/cssystem/Software/Password_Only/SSHSecureShellClient-3.2.9.html">here locally</a>. This requires your CSD UNIX
+ username/password.
+</p>
+<p>
+    After successful installation, there should be a "SSH Secure Shell Client" icon
+on your desktop, double click it to open the application and the terminal starts up.
+</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/sshclient-1.jpg"></p>
+<p>
+    Press "Enter", a dialog will show up and prompt you for hostname and username,
+input your desire hostname and your username into the corresponding boxes:
+</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/sshclient-2.jpg"></p>
+<p>
+    If this is the first time you connect to the remote UNIX workstation, a warning
+dialog will pop up and ask for your decision, you may simply click "Yes".
+</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/sshclient-3.jpg"></p>
+<p>
+    Then a little dialog, "Add Profile", will pop up on the upper-right-handed corner, you may
+store this session as a new profile so that you don't have to type in the
+username and hostname again, select a self-descriptive profile name, e.g. the
+hostname you are connecting to.
+</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/sshclient-4.jpg"></p>
+<p>
+    You're done. You are now getting a secure remote terminal, if you would like
+to do file-transfer, click on the icon circled in red as shown.
+</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/sshclient-5.jpg"></p>
+<p>
+    Another new window starts up and you may just drag-n-drop your files between
+your local machines and the remote UNIX workstation. The left-panel is your
+local machine file explorer while the right one is the remote side. The bottom
+panel is the transfer status for pending/active file transfers.
+</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/sshclient-6.jpg"></p>
+<br />
+
+<h2 id="WEB">On Web browser:</h2>
+<p>
+    If you are out of town or in front of a public computer terminal which do 
+not have SSH client installed and you do not have the privilege to install
+one, but the machine does have Java runtime installed for the browser (with
+version J2SE 1.4+), you may try this inline SSH client through the web
+browser, both Netscape and Internet Explorer should work the same.
+</p>
+<p>
+    First, click <a target="sshterm" href="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/j2ssh/sshterm.html">this</a> link. If the following
+dialog pops up, click "Yes".
+</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/j2ssh.jpg"></p>
+<p>Once the Java applet loaded completed, choose "New Connection".</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/j2ssh-1.jpg"></p>
+<p>At the Hostname field, specify the hostname you would like to connect to, e.g. ras.cse.ust.hk and type in your username.</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/j2ssh-2.jpg"></p>
+<p>When this dialog pops up, click "Yes".</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/j2ssh-3.jpg"></p>
+<p>When this dialog pops up, choose "password" and click "Proceed".</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/j2ssh-4.jpg"></p>
+<p>When prompted, type in your CSD UNIX password.</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/j2ssh-5.jpg"></p>
+<p>Now, you are having a SSH terminal open at the host you specified.</p>
+<p>
+    <img src="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/images/j2ssh-6.jpg"></p>
+<p>Once you are done, type in "exit" and when prompted to save the configuration, click "No".</p>
+<br />
+<hr />
+<div>
+    <address>CS System</address>
+    Last updated: 5 June 2003
+</div>
+	</article>
+	<aside id="progress">
+		<img src="http://cssystem.cs.ust.hk/images/ajax-loader.gif" alt="Loading..." />
+	</aside>
+	<aside id="scrollToTop"></aside>
+	<footer>
+		<div class="bottom-links">
+			<nav>
+				<a href="http://cssystem.cs.ust.hk/UGuides/index.html">User Guides</a>
+				<a href="http://cssystem.cs.ust.hk/Facilities/index.html">Facilities</a>
+				<a href="http://cssystem.cs.ust.hk/UGuides/RemoteAccess/index.html">Remote Access</a>
+				<a href="http://cssystem.cs.ust.hk/FAQ/index.html">FAQ</a>
+				<a href="http://cssystem.cs.ust.hk/Forms/index.html">Useful Forms</a>
+				<a href="http://cssystem.cs.ust.hk/HOME/index.html">About Us</a>
+			</nav>
+		</div>
+		<div class="contact">
+			<address>
+				<div>Please send comments and suggestions to <a class="mail"
+					href="javascript:msend('cssystem');">cssystem</a></div>
+				<div><a href="http://www.cse.ust.hk/">Department of Computer Science and Engineering</a></div>
+				<div><a href="http://www.ust.hk/">The Hong Kong University of Science and Technology</a></div>
+				<div>All rights reserved</div>
+			</address>
+			<img id="officialLogo" src="http://cssystem.cs.ust.hk/images/logo.gif" alt="logo" />
+		</div>
+	</footer>
+</div>
+</body>
+
+<!-- Mirrored from cssystem.cs.ust.hk/home.php?docbase=UGuides/RemoteAccess&req_url=UGuides/RemoteAccess/ssh.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Dec 2015 07:14:08 GMT -->
+</html>

@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #FFC;
+	background-image: url(../img/bgpage.gif);
+	background-repeat: repeat-x;
+	font: 14px/1.4 Arial, Helvetica, sans-serif;
+}
+body#narrow {
+	background-color: #FFC;
+	background-image: url(../img/bgpage_s.gif);
+	background-repeat: repeat-x;
+	font: 14px/1.4 Arial, Helvetica, sans-serif;
+}
+strong {
+	font-weight:bold;
+}
+a {
+	color: #3165FF;
+	text-decoration:none !important;
+}
+
+a:hover {
+	color: #3165FF;
+	text-decoration:underline !important;
+}
+
+.clear {
+	clear:both;
+}
+
+#doc {
+	width:980px;
+}
+#top {
+	height: 110px;
+}
+body#narrow #top {
+	height: 60px;
+}
+
+#top .title a#tl {
+	text-indent:-9999px;
+	float: left;
+	background-image: url(../img/hdr_page.png);
+	background-repeat: no-repeat;
+	height:110px;
+	width:680px;
+	text-decoration:none;
+}
+
+body#narrow #top .title a#tl {
+	background-image: url(../img/hdr_page_s.png);
+	height:60px;
+	width:570px;
+}
+
+
+#top .global {
+	float: right;
+	margin-top:53px;
+	margin-right:5px;
+	size:0.8em;
+	color:#ACD6FF;
+}
+body#narrow #top .global {
+	margin-top:23px;
+}
+#top .global a {
+	margin: 0px 5px;
+	color:#ACD6FF !important;
+	text-decoration:none;
+}
+#top .global a:hover {
+	color:#ACD6FF !important;
+	text-decoration:underline;
+}
+
+#main {
+	padding:30px 85px;
+}
+#main h1 {
+	font-size:1.5em;
+	color:#9B6B06;
+	margin-bottom:1em;
+}
+#main p, #main td {
+	color:#545454;
+	margin-bottom:1em;
+	text-align:justify;
+	line-height:1.5em;
+}
+#main ul {
+	list-style-image:url(../img/arrow-1.gif);
+	margin-left:25px;
+}
+#main li {
+	color:#545454;
+	margin-bottom:8px;
+}
+#main ul li ul {
+	list-style-image:none;
+	list-style-type: disc;
+	margin-left:25px;
+}
+#main .caption {
+	font-size:0.9em;
+	color:#545454;
+	margin-bottom:8px;
+}
+
+#main .dotline {
+	background:url(../img/bg_dotline.gif) repeat-x;
+}
+
